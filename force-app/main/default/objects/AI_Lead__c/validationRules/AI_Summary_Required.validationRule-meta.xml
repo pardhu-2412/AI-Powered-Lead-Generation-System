@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AI_Summary_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Qualification_Status__c, &quot;Qualified&quot;),
+ISBLANK(AI_Summary__c)
+)</errorConditionFormula>
+    <errorMessage>AI Summary is required for qualified leads.</errorMessage>
+</ValidationRule>

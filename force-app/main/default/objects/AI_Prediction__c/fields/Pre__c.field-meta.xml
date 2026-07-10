@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre__c</fullName>
+    <label>Prediction result</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Potential</fullName>
+                <default>false</default>
+                <label>High Potential</label>
+            </value>
+            <value>
+                <fullName>Medium Potential</fullName>
+                <default>false</default>
+                <label>Medium Potential</label>
+            </value>
+            <value>
+                <fullName>Low Potential</fullName>
+                <default>false</default>
+                <label>Low Potential</label>
+            </value>
+            <value>
+                <fullName>Hot Lead</fullName>
+                <default>false</default>
+                <label>Hot Lead</label>
+            </value>
+            <value>
+                <fullName>Warm Lead</fullName>
+                <default>false</default>
+                <label>Warm Lead</label>
+            </value>
+            <value>
+                <fullName>Cold Lead</fullName>
+                <default>false</default>
+                <label>Cold Lead</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>Not Qualified</fullName>
+                <default>false</default>
+                <label>Not Qualified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

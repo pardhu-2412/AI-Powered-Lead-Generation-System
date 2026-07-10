@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>AI-powered lead capture, scoring, and follow-up application.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>AI-Powered Lead Generation System</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AI_Lead_Generation_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AI_Lead_Generation_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Sales Agent Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AI_Lead_Generation_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>AI_Lead_Generation_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Platform Profile.</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Platform Profile.</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Platform Profile.</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AI Lead Manager Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Sales Agent Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>AI_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>AI_Lead__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Sales Agent Profile</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>AI_Lead__c</tabs>
+    <tabs>AI_Prediction__c</tabs>
+    <tabs>Conversation__c</tabs>
+    <tabs>Website_Visit__c</tabs>
+    <tabs>Follow_Up__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>AI_Powered_Lead_Generation_System_UtilityBar</utilityBar>
+</CustomApplication>
