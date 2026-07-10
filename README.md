@@ -1,56 +1,343 @@
-# Salesforce DX Project
+# AI-Powered Lead Generation System
 
-Salesforce DX is a development approach that brings source-driven development, team collaboration, and continuous integration to the Salesforce Platform. Instead of working directly in an org through a web browser, you work with metadata as source files in a local DX project, track changes in version control, and deploy through automated processes.
+## Project Overview
 
-This project template gets you started with the tools and structure you need to build Salesforce applications using source control, scratch orgs, and the Salesforce CLI.
+The AI-Powered Lead Generation System is a Salesforce CRM application designed to help organizations manage, analyze, and prioritize customer leads efficiently. The application leverages Salesforce automation and Einstein Prompt Builder to provide AI-generated lead summaries, enabling sales teams to make informed decisions and improve customer engagement.
 
-## Prerequisites
+This project demonstrates the use of Salesforce custom objects, Lightning applications, automation using Flows, AI-powered summaries, reports, dashboards, and role-based security.
 
-Before you start, make sure you have:
+---
 
-- **Salesforce CLI** - Download from [developer.salesforce.com/tools/salesforcecli](https://developer.salesforce.com/tools/salesforcecli). See [Install Salesforce CLI](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm) for details.
-- **VS Code with Salesforce Extension Pack** - See [Installation Instructions](https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/install.html) for details. Includes the Agentforce Vibes extension.
-- **A development org** - Sign up for a free Developer Edition org [here](https://developer.salesforce.com/signup).
-- **Dev Hub enabled** (optional, required to create scratch orgs) - You can enable Dev Hub in your development org under Setup > Dev Hub.  See [Provide Developers Access to Salesforce DX Tools](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_setup_dx_tools.htm).
+## Objectives
 
-## Project Structure
+- Manage customer leads efficiently.
+- Generate AI-powered lead summaries.
+- Organize customer interactions.
+- Track website visits and follow-up activities.
+- Improve lead prioritization using AI predictions.
+- Provide reports and dashboards for business insights.
 
-Your DX project follows this structure:
+---
 
-- **`force-app/main/default/`** - Your metadata source files live in this default package directory. You can configure additional package directories in the `sfdx-project.json` file.
-- **`config/`** - Scratch org definitions and project settings
-- **`scripts/`** - Automation scripts for common tasks
-- **`sfdx-project.json`** - Project manifest that defines package directories, namespace, API version, and other project-level settings
+## Technologies Used
 
-See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm).
+- Salesforce Developer Edition
+- Salesforce Lightning Experience
+- Salesforce DX
+- VS Code
+- Salesforce CLI
+- Einstein Prompt Builder
+- Flow Builder
+- Reports & Dashboards
+- Git & GitHub
 
-## Get Started
+---
 
-Ready to start developing? The [Get Started with Salesforce DX](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_get_started_dx.htm) guide walks you through your first project, from creating a scratch org to creating a simple Apex class or LWC to deploying your code to a sandbox.
+## Features
 
-## Common Salesforce CLI Commands
+- AI Lead Management
+- AI-generated Lead Summary using Einstein Prompt Builder
+- AI Prediction Management
+- Conversation Tracking
+- Website Visit Tracking
+- Follow-up Management
+- CSV Data Import
+- Record Triggered Flow Automation
+- Reports and Dashboards
+- Role-based User Access
 
-Here are common CLI commands that you'll use the most:
+---
 
-- `sf org login web`: Authorize an org
-- `sf org open`: Open your org in a browser
-- `sf org create scratch`: Create a scratch org
-- `sf project deploy start`: Deploy metadata to your org
-- `sf project retrieve start`: Retrieve metadata from your org
-- `sf template generate <artifact>`: Scaffold new components, such as Apex classes and triggers, LWC components, Lightning apps, and more
-- `sf apex <command>`: Run Apex tests, run anonymous Apex blocks, and view logs
-- `sf data <command>`: Work with test data
-- `sf alias <command>`: Manage org aliases
-- `sf config <command>`: Configure CLI settings
+# Application Workflow
 
-## Use Agentforce Vibes to Build Lightning Apps
+1. User logs into Salesforce.
+2. Opens the AI-Powered Lead Generation System application.
+3. Creates or imports AI Leads.
+4. AI Summary is generated using Einstein Prompt Builder.
+5. AI Prediction record is created for lead evaluation.
+6. Sales team records customer conversations.
+7. Website visit information is maintained.
+8. Follow-up tasks are created.
+9. Reports and Dashboards display lead analytics.
 
-Transform your ideas into custom Lightning apps that extend CRM workflows directly in Lightning Experience. Through natural conversations with Agentforce Vibes, implement custom objects and fields, complex business logic, and dynamic UI components. See [Build a Lightning App Using Agentforce Vibes](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/lexapp-overview.html).
+---
 
-## Additional Resources
+# Custom Objects
 
-- [Agentforce Vibes Developer Guide](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/einstein-overview.html)
-- [Salesforce CLI Installation Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+## AI Leads
+
+Stores customer lead information.
+
+### Sample Fields
+
+- AI Lead Name
+- Email
+- Phone
+- Company
+- Industry
+- Lead Category
+- Qualification Status
+- Product Interest
+- AI Summary
+
+---
+
+## AI Predictions
+
+Stores lead prediction information.
+
+### Fields
+
+- AI Prediction Name
+- Lead Score
+- Prediction Date
+- Prediction Result
+- Recommendation
+
+---
+
+## Conversations
+
+Stores customer communication details.
+
+### Example Fields
+
+- Conversation Name
+- Channel
+- Status
+- Notes
+
+---
+
+## Website Visits
+
+Stores customer website activity.
+
+### Example Fields
+
+- Visit Name
+- Page Visited
+- Duration
+- Visit Date
+
+---
+
+## Follow-Ups
+
+Stores follow-up activities.
+
+### Example Fields
+
+- Follow-Up Name
+- Due Date
+- Status
+- Assigned User
+
+---
+
+# AI Features
+
+This project uses Salesforce Einstein Prompt Builder to generate AI-powered summaries for customer leads.
+
+The AI Summary helps sales representatives understand customer information quickly and prioritize interactions.
+
+The AI Prediction object stores lead score, prediction result, and recommendations for decision-making.
+
+---
+
+# Automation
+
+Record Triggered Flow
+
+When a new AI Lead is created:
+
+- Flow executes automatically.
+- AI Summary can be generated.
+- Notifications can be sent.
+- Validation rules ensure correct data.
+
+---
+
+# Reports
+
+The application includes reports such as:
+
+- Total AI Leads
+- Leads by Qualification Status
+- Leads by Industry
+- Leads by Category
+- AI Prediction Summary
+- Website Visit Summary
+- Follow-Up Summary
+
+---
+
+# Dashboard
+
+The dashboard provides:
+
+- Total AI Leads
+- Qualified vs Unqualified Leads
+- Lead Categories
+- Industry Distribution
+- AI Prediction Summary
+- Follow-Up Status
+
+---
+
+# User Roles
+
+## System Administrator
+
+- Manages users
+- Configures application
+- Imports data
+- Manages security
+- Creates reports and dashboards
+
+---
+
+## AI Lead Manager
+
+- Creates AI Leads
+- Imports Lead data
+- Reviews AI Summary
+- Creates AI Predictions
+- Assigns follow-ups
+
+---
+
+## Sales Agent
+
+- Views assigned leads
+- Reviews AI Summary
+- Contacts customers
+- Updates conversations
+- Updates follow-up records
+
+---
+
+# Security
+
+The application uses:
+
+- Profiles
+- Roles
+- Object Permissions
+- Sharing Rules
+
+to provide secure access to business data.
+
+---
+
+# Sample Workflow
+
+Customer Information
+
+↓
+
+Create AI Lead
+
+↓
+
+Generate AI Summary
+
+↓
+
+Create AI Prediction
+
+↓
+
+Contact Customer
+
+↓
+
+Record Conversation
+
+↓
+
+Track Website Visit
+
+↓
+
+Schedule Follow-Up
+
+↓
+
+Monitor Dashboard
+
+---
+
+# Folder Structure
+
+```
+force-app/
+│
+├── applications
+├── classes
+├── flexipages
+├── flows
+├── layouts
+├── lwc
+├── objects
+├── permissionsets
+├── profiles
+├── reports
+├── dashboards
+├── staticresources
+├── tabs
+├── triggers
+```
+
+---
+
+# Deployment
+
+1. Clone the repository.
+
+```
+git clone https://github.com/pardhu-2412/AI-Powered-Lead-Generation-System.git
+```
+
+2. Authorize Salesforce Org.
+
+```
+sf org login web
+```
+
+3. Deploy source.
+
+```
+sf project deploy start
+```
+
+4. Import sample CSV files.
+
+5. Open the AI-Powered Lead Generation System application.
+
+---
+
+# Future Enhancements
+
+- Automatic AI Lead Scoring using Einstein Lead Scoring
+- Agentforce Integration
+- Email Automation
+- SMS Notifications
+- Web-to-Lead Integration
+- External AI Integration (OpenAI/Gemini)
+- Predictive Analytics
+- Mobile Optimization
+
+---
+
+# Repository
+
+GitHub Repository:
+
+https://github.com/pardhu-2412/AI-Powered-Lead-Generation-System
+
+---
+
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/)
 - [Salesforce CLI Plugin Development Guide](https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/conceptual-overview.html)
