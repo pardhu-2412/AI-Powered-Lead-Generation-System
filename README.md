@@ -290,10 +290,44 @@ force-app/
 ```
 
 ---
-## Application Demo
+# Application Demo
+
+## Home Dashboard
 
 <p align="center">
-  <img src="images/app-home.png" width="900" alt="Application Home">
+  <img src="ScreenShot/Home%20Dashboard-1.png" width="900" alt="Home Dashboard">
+</p>
+
+---
+
+## AI Leads
+
+<p align="center">
+  <img src="ScreenShot/AI%20Leads.png" width="900" alt="AI Leads">
+</p>
+
+---
+
+## AI Predictions
+
+<p align="center">
+  <img src="ScreenShot/AI%20Predictions.png" width="900" alt="AI Predictions">
+</p>
+
+---
+
+## AI Summary Field
+
+<p align="center">
+  <img src="ScreenShot/AI%20Summary%20Field.png" width="900" alt="AI Summary Field">
+</p>
+
+---
+
+## Dashboard
+
+<p align="center">
+  <img src="ScreenShot/Dashboard-2.png" width="900" alt="Dashboard">
 </p>
 
 # Deployment
