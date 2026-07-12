@@ -290,6 +290,11 @@ force-app/
 ```
 
 ---
+## Application Demo
+
+<p align="center">
+  <img src="images/app-home.png" width="900" alt="Application Home">
+</p>
 
 # Deployment
 
